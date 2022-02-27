@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Preview site](https://luissitoe.github.io/3-column-preview-card-component/)
+- Live Site URL: [Preview site](https://luissitoe.github.io/profile-card-component/)
 
 ## My process
 
@@ -35,7 +35,6 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 
 ## Author
 
