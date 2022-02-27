@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    /*
+    colors
+    -------------------------*/
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desacturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+    --white: #fff;
+
+    /*
+    typography
+    ------------------------*/
+    --font-main: 'Kumbh Sans', sans-serif;
+    --fz-body: 1.125rem;
+
+    /* font weight*/
+    --regular: 400;
+    --bold: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto
+}
+
+body {
+    background-color: var(--dark-cyan);
+    background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: right 52vw bottom 35vh, left 48vw top 52vh;
+    font-family: var(--font-main);
+    font-size: var(--fz-body);
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    padding: 0.625rem;
+}
+
+
+.card {
+    background-color: var(--white);
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 21.75rem;
+    height: 23.563rem;
+    border-radius: 0.938rem;
+    overflow: hidden;
+}
+
+.card__header {
+    width: 100%;
+    height: 8.875rem;
+    position: relative;
+}
+
+.card__profile {
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 7rem;
+    height: 7rem;
+    border: .4rem solid var(--white);
+    border-radius: 50%;
+}
+
+.card__body {
+    padding: 5rem 0 1rem;
+    text-align: center;
+}
+
+.card__name {
+    font-weight: var(--bold);
+    color: var(--very-dark-desacturated-blue);
+    margin-bottom: .5rem;
+}
+
+.age {
+    font-weight: var(--regular);
+    color: var(--dark-grayish-blue);
+}
+
+.city {
+    font-size: 0.875rem;
+    color: var(--dark-grayish-blue);
+}
+
+.card__footer {
+
+    color: var(--dark-gray);
+    border-top: 1px solid #E7E7E7;
+    padding: 1rem 0;
+}
+
+.card__list {
+    display: flex;
+    justify-content: center;
+    column-gap: 2rem;
+}
+
+.card__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: .3rem;
+    letter-spacing: 0.14em;
+    font-size: 0.625rem;
+    color: var(--dark-gray);
+}
+
+.number {
+    font-size: var(--fz-body);
+    color: var(--very-dark-desacturated-blue);
+    font-weight: var(--bold);
+    letter-spacing: 0;
+}
+
+.footer {
+    padding: 1rem;
+}
+
+.attribution {
+    font-size: 0.833rem;
+    text-align: center;
+}
+
+.attribution a {
+    color: #87F4FB;
+}
