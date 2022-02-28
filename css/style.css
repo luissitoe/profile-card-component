@@ -77,22 +77,24 @@ body {
 }
 
 .card__profile {
+    background-color: #fff;
     display: block;
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 7rem;
-    height: 7rem;
-    border: .4rem solid var(--white);
+    width: 6.063rem;
+    height: 6.063rem;
+    border: 0.25rem solid var(--white);
     border-radius: 50%;
 }
 
 .card__body {
-    padding: 5rem 0 1rem;
+    padding: 4.5rem 0 1.5rem;
     text-align: center;
 }
 
 .card__name {
+    font-size: var(--fz-body);
     font-weight: var(--bold);
     color: var(--very-dark-desacturated-blue);
     margin-bottom: .5rem;
@@ -101,6 +103,7 @@ body {
 .age {
     font-weight: var(--regular);
     color: var(--dark-grayish-blue);
+    margin-left: .3rem;
 }
 
 .city {
@@ -109,16 +112,15 @@ body {
 }
 
 .card__footer {
-
     color: var(--dark-gray);
     border-top: 1px solid #E7E7E7;
-    padding: 1rem 0;
+    padding: 1.5rem 0;
 }
 
 .card__list {
     display: flex;
     justify-content: center;
-    column-gap: 2rem;
+
 }
 
 .card__item {
@@ -127,16 +129,22 @@ body {
     justify-content: center;
     flex-direction: column;
     row-gap: .3rem;
+    margin-left: 3rem;
     letter-spacing: 0.14em;
     font-size: 0.625rem;
-    color: var(--dark-gray);
+    color: var(--dark-grayish-blue);
+}
+
+.card__item:first-child {
+    margin-left: 0;
 }
 
 .number {
     font-size: var(--fz-body);
-    color: var(--very-dark-desacturated-blue);
     font-weight: var(--bold);
+    text-transform: uppercase;
     letter-spacing: 0;
+    color: var(--very-dark-desacturated-blue);
 }
 
 .footer {
